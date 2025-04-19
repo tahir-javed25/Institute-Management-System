@@ -10,7 +10,7 @@ import { userRoute } from "./routes/user.js";
 import { studentRoute } from "./routes/student.js";
 
 
-mongoose.connect("mongodb+srv://institueManagement:1234@cluster0.kiwqx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+mongoose.connect("Link to your database Atlas")
 .then(console.log("Database Connected"))
 .catch(err=>{
     console.log(err);
