@@ -1,0 +1,428 @@
+/* #F5F7FB  #FFFFFF #33394C #4E7CFF #7033FF #F65164 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sign-up-div{
+ width: 100%;
+ height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.sign-up-page{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 4px 4px 8px rgb(131, 129, 131)
+
+}
+.sign-up-left{
+    background-color: #F65164;
+    width: 50%;
+    font-size: 16px;  
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    color: #F5F7FB;
+}
+.sign-up-left img{
+    width: 200px;
+    height: 200px;
+}
+
+.sign-up-right{
+    width: 50%;
+    background-color: #F5F7FB;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-up-right h2{
+    margin-bottom: 20px;
+}
+.profile{
+    width: 100px;
+
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.form input{
+    padding: 12px;
+    width: 80%;
+    border-radius: 10px;
+    border: 2px solid rgb(131, 129, 131);
+    
+}
+select{
+    padding: 12px;
+    width: 80%;
+    border-radius: 10px;
+    border: 2px solid rgb(131, 129, 131);
+}
+
+.form input:active {
+    border: 2px solid lightblue;
+}
+
+.form button{
+    padding: 12px;
+    box-sizing: border-box;
+    font-weight: 500;
+    border-radius: 10px;
+    width: 50%;
+    background-color: #F65164;
+}
+.form button:hover{
+    padding: 12px;
+    outline: 2px solid purple;
+}
+
+.link{
+    text-decoration: none;
+}
+
+/* DashBoard styling */
+
+.dash-body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(to right, #e6e6e6, #ae9cda ) ;
+}
+
+.container{
+    width: 98vw;
+    height: 90vh;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #F5F7FB;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.nav-container{
+    width: 15%;
+    height: 90vh;
+    padding: 10px;
+    background-color: #7033FF;
+}
+.nav-side-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 4px;
+    margin-bottom: 20px;
+}
+
+.nav-side-logo h2{
+    font-size: 16px;
+    color: #F5F7FB;
+}
+.nav-side-logo p{
+    font-size: 12px;
+    color: #F5F7FB;
+}
+
+.nav-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.link-menu{
+    text-decoration: none;
+    color: #F5F7FB;
+    padding: 8px;
+    border-radius: 10px;
+}
+.fa-solid, .fa-regular{
+    margin-right: 10px ;
+}
+
+.link-active-menu{
+    text-decoration: none;
+    color: #F5F7FB;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #312a419f;
+    transition: 0.5s ease-in-out;
+}
+
+.link-menu:hover{
+    /* text-decoration: underline; */
+    background-color: #312a419f;
+    transition: 0.5s ease-in-out;
+}
+
+
+
+.main-container{
+    width: 85%;
+    height: 90vh;
+    /* background-color: #F65164; */
+
+}
+
+.top-bar{
+    width: 100%;
+    height: 8vh;
+    background: #e6e6e6;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    overflow: hidden;
+    gap: 20px;
+}
+
+.profile-logo{
+    width: 50px;
+    height: 50px;
+    background-color: #7033FF;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.profile-name{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    /* background-color: green; */
+}
+.profile-name h1{
+    font-size: 20px;
+}
+.profile-name button{
+    border-radius: 5px;
+    background: #7033FF;
+    padding: 5px;
+    text-align: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* ... Style of signup form is used for add-courses aw well, */
+/* ........All Courses........ */
+.course-form input{
+    width: 70%;
+}
+.wraper{
+    margin-top: 20px;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.course-item{
+    width: 30%;
+    height: 40vh;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #e6e6e6;
+    list-style: none;
+    cursor: pointer;
+}
+
+.course-item:hover{
+    box-shadow: 2px 2px 5px #9170dfc3,
+    -2px -2px 5px #9170dfc3;
+}
+
+.course-thumbnail{
+    width: 100%;
+    height: 25vh;
+}
+
+.course-data{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.course-data h2{
+    font-size: 15px;
+}
+
+.duration{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+
+/* Course details */
+
+.course-detail-main-wraper{
+    background-color: #eee;
+    height: 80vh;
+    padding: 5px;
+    /* width: 99%; */
+    margin-top: 0px 5px;
+    text-transform: capitalize;
+    
+}
+
+.course-detail{
+    
+    background-color: beige;
+    display: flex;
+    justify-content: space-around;
+}
+
+.course-detial-logo{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+
+}
+.course-btn {
+    /* width: 250px; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.course-btn .btn{
+    width: 100px;
+    height: 50px;
+    /* background-color: #4CAF50; */
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;    
+}
+
+.course-btn .edit-btn{
+    background-color:  #7033FF;
+}
+.course-btn .delete-btn{
+    background-color: #F65164;
+
+}
+
+.course-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    justify-content: center; 
+    /* align-items: left; */
+}
+
+.course-info p{
+    text-align: left;
+}
+
+.course-description{
+    margin-top: 10px;
+    height: 10vh;
+    overflow: auto;
+    
+}
+
+.student-list{
+    margin-top: 10px;
+    height: 30vh;
+    background-color: white;
+    overflow-y: auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.student-list-item{
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    justify-content: space-around;
+    border-radius: 10px;
+    margin:  10px 0px ;
+    overflow: hidden;
+}
+.student-list-item:hover{
+     background-color: #7033FF;
+    cursor: pointer;
+}
+
+.student-list-item img{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+
+/* .......All students tbale */
+
+.all-students{
+    height: 90vh;
+    background-color: #eee;
+}
+
+.all-students h1{
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.students-table{
+    width: 99%;
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+ th,td{
+    height: 8vh;
+    text-align: center;
+}
+
+.students-table .student-img{
+    width: 50px;
+    box-shadow: 1px 1px 3px #ae9cda; ;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.students-table tbody tr:hover{
+    background-color: #ae9cda;
+    transition: 0.5s ease-in-out;
+
+}
